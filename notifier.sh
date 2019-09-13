@@ -8,7 +8,7 @@ for (( ITERATION=1; ITERATION<=$ITERATIONS; ITERATION++ )); do
         if [ -z $INITIAL ]; then
                 continue
         fi
-        sleep 180;
+        sleep 30;
         BLOCK=`curl --insecure --connect-timeout 6 -s -H 'Content-Type: application/json' -d '{"jsonrpc": "2.0", "method": "icx_getLastBlock", "id": 1234}' http://$IPN/api/v3 | jq .result.height`
         if [ -z $BLOCK ]; then
                 continue
@@ -43,7 +43,7 @@ while true; do
 	do
 		check $IP
 	done
-	sleep 180;
+	sleep 10;
 done
 
 
