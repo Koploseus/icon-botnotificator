@@ -3,7 +3,7 @@
 ### Prerequisites:   
 Install curl and jq
 ```
-$sudo apt-get intall curl jq
+$sudo apt-get install curl jq
 ```
 ### Setup script
 To setup script change parameters and ips in config.ini.
