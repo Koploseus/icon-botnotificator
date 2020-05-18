@@ -1,11 +1,27 @@
-# ICON-botnotificator
-### This script is monitoring the state of node and notify to telegram channel if node stopped.
-### Prerequisites:   
-Install curl and jq
+# ICON Notification Bot
+
+This script monitors the status of the ICON node and notifies the Telegram Bot if the node stops syncing or goes down.
+
+### Prerequisites
+
+* curl
+* jq
 ```
-$sudo apt-get install curl jq
+sudo apt-get install curl jq
 ```
-### Setup script
-To setup script change parameters and ips in config.ini.
-### Start script
-To run script type ./notifier.sh.
+### Installing
+
+```sh
+git clone https://github.com/everstake/icon-botnotificator.git
+cd icon-botnotificator
+chmod +x notifier.sh
+```
+### Configuration
+
+Edit configuration file `config.ini`.
+
+## Running
+Run a command
+```sh
+./notifier.sh
+```
